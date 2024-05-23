@@ -1,5 +1,5 @@
 -- Seed data for all items
-INSERT INTO menu_items (name, price, description, image_url, inventory_count, category) VALUES
+INSERT INTO menu_items (item_name, price, description, image_url, inventory_count, category) VALUES
 -- Appetizers
 ('Chicken & Cheese Taquito', '1 for $2.00 or 2 for $4', 'Fried Chicken Taco w/ cheese', '../images/chicken-taquito.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),
 ('Cheeseburger Eggroll', '$3.00', 'Cheeseburger Egg Roll', '../images/burgerEggroll.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),

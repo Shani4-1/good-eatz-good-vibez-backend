@@ -1,4 +1,4 @@
-const { Router } = require('express');
+const express = require('express');
 
 const {
     getAllMenuItems,
@@ -7,9 +7,10 @@ const {
     updateMenuItem,
     deleteMenuItem
 } = require("../queries/menuItemsQueries.js");
-const { response } = require('../app');
+const menuItemsController = express.Router();
 
-const menuItemsController = Router();
+
+
 
 const isValidID = (id) => {
     const idNum = Number(id);
@@ -17,12 +18,12 @@ const isValidID = (id) => {
 };
 
 const ITEM_KEYS = [
-    name,
-    price,
-    description,
-    image_url,
-    inventory_count,
-    category
+    "item_name",
+    "price",
+    "description",
+    "image_url",
+    "inventory_count",
+    "category"
 ];
 
 const isValidItem = (menuItem) => {
@@ -90,7 +91,7 @@ menuItemsController.put("/:id", async (req, res) => {
         return res.status(404).json({ error: `could not find menu item with id ${id}` });
        }
        const item = req.body;
-       if (!isValidItem(menuItem)) {
+       if (!isValidItem(item)) {
         return res.status(400).json({ error: `item must only have keys: ${ITEM_KEYS.join(", ")}`});
        }
 
@@ -112,10 +113,10 @@ menuItemsController.delete("/:id", async (req, res) => {
             return res.status(404).json({ error: `could not find menu item with id ${id}` });
            }
            const item = req.body;
-           if (!isValidItem(menuItem)) {
+           if (!isValidItem(item)) {
             return res.status(400).json({ error: `item must only have keys: ${ITEM_KEYS.join(", ")}`});
            }
-        const deletedItem = await deletedItem(Number(id));
+        const deletedItem = await deleteMenuItem(Number(id));
         res.status(200).json({ data: deletedItem});   
     } catch (error) {
         res.status(500).json({ error: error.message})

@@ -1,6 +1,8 @@
+DROP TABLE IF EXISTS menu_items;
+
 CREATE TABLE menu_items (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
+    item_name VARCHAR(255) NOT NULL,
     price VARCHAR(255) NOT NULL,
     description TEXT,
     image_url VARCHAR(255),
