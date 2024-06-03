@@ -1,10 +1,10 @@
 -- Seed data for all items
 INSERT INTO menu_items (item_name, price, description, image_url, inventory_count, category) VALUES
 -- Appetizers
-('Chicken & Cheese Taquito', '1 for $2.00 or 2 for $4', 'Fried Chicken Taco w/ cheese', '../images/chicken-taquito.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),
+('Chicken & Cheese Taquito', '$2.00', 'Fried Chicken Taco w/ cheese', '../images/chicken-taquito.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),
 ('Cheeseburger Eggroll', '$3.00', 'Cheeseburger Egg Roll', '../images/burgerEggroll.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),
-('Chicken Kabob (* Limited *)', '1 for $3.00 or 2 for $5', 'Grilled chicken Kabob', '../images/chikabob.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),
-('5pc Shrimp (PLAIN)', '$5.00', 'Colossal shrimp', '../images/fried-shrimp.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),
+('Chicken Kabob (* Limited *)', '$3.00', 'Grilled chicken Kabob', '../images/chikabob.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),
+('5pc Shrimp (PLAIN)', '$5.00', 'Jumbo shrimp', '../images/fried-shrimp.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),
 ('Salmon Bites (PLAIN)', '$10.00', '6 Salmon Bites per order', '../images/salmonBites.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),
 ('Dry Rub Wings', '$5.00', 'Lemon Pepper, Jerk, Plain, Ranch, Buffalo, Bourbon Peach', '../images/wings.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),
 ('Belgian Waffle', '$8.00', 'House made Belgian Waffle', '../images/Belgianwaff.jpeg', FLOOR(RANDOM() * 100 + 1), 'Appetizer'),
@@ -27,7 +27,7 @@ INSERT INTO menu_items (item_name, price, description, image_url, inventory_coun
 ('Catfish nuggets w/ FF', '$12.00', 'Catfish nuggets w/ FF', '../images/cfNuggFF.jpeg', FLOOR(RANDOM() * 100 + 1), 'Main Course'),
 ('8pc Shrimp w/ Fries', '$10.00', 'Shrimp w/ FF', '../images/shrimp.jpeg', FLOOR(RANDOM() * 100 + 1), 'Main Course'),
 ('Dry rub wings w/ Fries', '$8.00', 'Lemon Pepper, Jerk, Plain, Ranch, Buffalo, Bourbon Peach', '../images/wingsFries.jpeg', FLOOR(RANDOM() * 100 + 1), 'Main Course'),
-('3 Chicken Tenders w/ Fries', '$8.00 (5 tenders $10)', 'Housemade Tenders w/FF', '../images/tendersFries.jpeg', FLOOR(RANDOM() * 100 + 1), 'Main Course'),
+('3 Chicken Tenders w/ Fries', '$8.00', 'Housemade Tenders w/FF', '../images/tendersFries.jpeg', FLOOR(RANDOM() * 100 + 1), 'Main Course'),
 ('Pork Chop w/ Fries', '$8.00', '1 Crispy pork chop & fries.', '../images/porkchops.jpeg', FLOOR(RANDOM() * 100 + 1), 'Main Course'),
 ('2 Pork Chop w/ Fries', '$10.00', '2 Crispy pork chops & fries.', '../images/two-chops.jpeg', FLOOR(RANDOM() * 100 + 1), 'Main Course'),
 
@@ -49,22 +49,22 @@ INSERT INTO menu_items (item_name, price, description, image_url, inventory_coun
 -- Sides
 ('Fries', '$3.00', 'Perfectly seasoned crispy fries', '../images/frenchFries.jpeg', FLOOR(RANDOM() * 100 + 1), 'Side'),
 ('Onion Rings', '$3.00', 'Crispy Onion Rings', '../images/onionRings.jpeg', FLOOR(RANDOM() * 100 + 1), 'Side'),
-('Mozarella Sticks', '$4.00 (6)', 'Crispy Mozarella Sticks', '../images/mozSticks.jpeg', FLOOR(RANDOM() * 100 + 1), 'Side'),
+('6 Mozarella Sticks', '$4.00', 'Crispy Mozarella Sticks', '../images/mozSticks.jpeg', FLOOR(RANDOM() * 100 + 1), 'Side'),
 ('Mac and Cheese', '$4.00', 'Cheesy Mac', '../images/macCheese.jpeg', FLOOR(RANDOM() * 100 + 1), 'Side'),
 ('Yellow Rice', '$3.00', 'Red rice w/ Beef sausage', '../images/rice.jpeg', FLOOR(RANDOM() * 100 + 1), 'Side'),
 ('Coconut Rice', '$3.00', 'Steamed White Rice', '../images/jasRice.jpeg', FLOOR(RANDOM() * 100 + 1), 'Side'),
 
 -- Burgers
-('Cheeseburger w/ Fries', '$7.00 (Burger Only $5)', 'Juicy cheeseburger with fries.', '../images/cheeseburger.jpeg', FLOOR(RANDOM() * 100 + 1), 'Burger'),
-('Double Cheeseburger w/ Fries', '$9.00 (Burger Only $7)', 'Juicy cheeseburger with fries.', '../images/dblBurgerFries.jpeg', FLOOR(RANDOM() * 100 + 1), 'Burger'),
-('Hamburger w/ Fries', '$6.00 (Burger Only $4)', 'Classic burger and fries combo.', '../images/hamburger.jpeg', FLOOR(RANDOM() * 100 + 1), 'Burger'),
+('Cheeseburger w/ Fries', '$7.00', 'Juicy cheeseburger with fries.', '../images/cheeseburger.jpeg', FLOOR(RANDOM() * 100 + 1), 'Burger'),
+('Double Cheeseburger w/ Fries', '$9.00', 'Juicy cheeseburger with fries.', '../images/dblBurgerFries.jpeg', FLOOR(RANDOM() * 100 + 1), 'Burger'),
+('Hamburger w/ Fries', '$6.00', 'Classic burger and fries combo.', '../images/hamburger.jpeg', FLOOR(RANDOM() * 100 + 1), 'Burger'),
 ('Porkchop Sandwich', '$7.00', '1 Fried Porkchop w/ 2pc bread or bun.', '../images/pork-chop-sandwich.jpeg', FLOOR(RANDOM() * 100 + 1), 'Burger'),
 ('Steak and Cheese Sandwich', '$8.00', 'Steak and cheese on a roll', '../images/pork-chop-sandwich.jpeg', FLOOR(RANDOM() * 100 + 1), 'Burger'),
 
 -- Desserts
 ('Homemade Cake', '$3.00 per slice', 'Changes Daily', '../images/Tres-Leches-Cake-Recipe-6.jpeg', FLOOR(RANDOM() * 100 + 1), 'Dessert'),
 ('Yellow Cake with Chocolate Frosting', '$3.00 per slice', 'Cake topped with chocolate frosting.', '../images/yellow_cake.jpeg', FLOOR(RANDOM() * 100 + 1), 'Dessert'),
-('Cookies', '$1.00 per cookie or 3 for $2.00', 'Chocolate chip, Sugar cookies, Peanut Butter (2 for $1)', '../images/cookie.jpeg', FLOOR(RANDOM() * 100 + 1), 'Dessert'),
+('3 Cookies', '$2.00', 'Chocolate chip, Sugar cookies, Peanut Butter (2 for $1)', '../images/cookie.jpeg', FLOOR(RANDOM() * 100 + 1), 'Dessert'),
 ('Iced Lemon Cornbread', '$1.00', 'Buttery lemon cornbread', '../images/lemonCake.jpeg', FLOOR(RANDOM() * 100 + 1), 'Dessert'),
 
 -- Drinks
